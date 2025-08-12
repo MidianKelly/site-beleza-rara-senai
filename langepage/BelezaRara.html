@@ -5,39 +5,56 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Beleza Rara</title>
-    <link rel="stylesheet" href="assets/css/bootstrap.css">
-    <link rel="stylesheet" href="assets/css/BelezaRara.css">
-
+    <link rel="stylesheet" href="../assets/css/bootstrap.css"> <!-- Ajuste o caminho se necessário -->
+    <link rel="stylesheet" href="../assets/css/BelezaRara.css"> <!-- Ajuste o caminho se necessário -->
 </head>
 
 <body>
-    <div class="top-bar text-center">
-        FRETE GRÁTIS ACIMA DE R$ 300,00.
+    <!-- Faixa preta no topo -->
+    <div class="top-bar">
+        FRETE GRÁTIS EM TODAS AS COMPRAS
     </div>
 
-
-    <header class="header ">
-        <!-- Menu -->
-         
-        <nav>
-            <ul>
-                <li>PRODUTOS</li>
-                <li>HISTORIA</li>
-                <li>POLITICAS</li>
-                <li>APOIOS</li>
-                <li>LOCALIZAÇÃO</li>
-                <li>PROJETO</li>
-            </ul>
-        </nav>
-
+    <!-- Cabeçalho principal -->
+    <header class="header">
         <!-- Logo central -->
         <div class="logo">BELEZA RARA</div>
 
+        <!-- Menu -->
+        <nav>
+            <ul>
+                <li>HISTÓRIA</li>
+                <li>POLITICA</li>
+                <li>APOIOS</li>
+                <li>LOCALIZAÇÃO</li>
+                <li>PROJETO</li>
+                <li>CUIDADOS COM A PELE</li>
+                <li>PERFUMES</li>
+                <li>SABONETES</li>
+                <li>MAQUIAGEM</li>
+            </ul>
+        </nav>
+
         <!-- Ícones à direita -->
         <div class="icons">
-            <span>👤 Acesse sua conta</span>
-            <img src="https://img.icons8.com/ios/50/search--v1.png" alt="Buscar">
-            <img src="https://img.icons8.com/ios/50/shopping-bag--v1.png" alt="Carrinho">
+            <div class="account">
+                <img src="https://img.icons8.com/ios/24/user--v1.png" alt="Conta">
+                <div>
+                    <span class="main-text">Acesse sua conta</span><br>
+                    <span class="sub-text">Rastreie seus pedidos!</span>
+                </div>
+            </div>
+            <img src="https://img.icons8.com/ios/24/search--v1.png" alt="Buscar">
+            <img src="https://img.icons8.com/ios/24/shopping-bag--v1.png" alt="Carrinho">
         </div>
     </header>
+    
+    <section class="shop-all">
+        <video autoplay muted loop playsinline>
+            <source src="videos/banner.mp4" type="video/mp4">
+            Seu navegador não suporta vídeo.
+        </video>
+    </section>
 </body>
+
+</html>

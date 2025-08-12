@@ -11,24 +11,24 @@ body {
     padding: 5px 0;
     font-weight: bold;
     font-size: 14px;
+    letter-spacing: 0.5px;
 }
 
-/* Container do menu */
+/* Container do cabeçalho */
 .header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 40px;
+    padding: 15px 40px;
     border-bottom: 1px solid #ddd;
 }
 
-/* Logo central */
+/* Logo */
 .logo {
-    font-size: 18px;
+    font-size: 20px;
     font-weight: bold;
     text-transform: uppercase;
-    flex: 1;
-    text-align: center;
+    flex-shrink: 0;
 }
 
 /* Menu de navegação */
@@ -39,22 +39,56 @@ nav ul {
     padding: 0;
     margin: 0;
     font-size: 14px;
+    font-weight: 500;
 }
 
 nav ul li {
     cursor: pointer;
+    transition: color 0.3s;
 }
 
-/* Ícones à direita */
+nav ul li:hover {
+    color: #888;
+}
+
+/* Área de ícones */
 .icons {
     display: flex;
     align-items: center;
     gap: 15px;
-    font-size: 14px;
 }
 
 .icons img {
     width: 20px;
     height: 20px;
     cursor: pointer;
+}
+
+/* Conta com texto */
+.account {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.account img {
+    width: 20px;
+    height: 20px;
+}
+
+.account .main-text {
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.account .sub-text {
+    font-size: 11px;
+    color: #555;
+}
+
+.shop-all img {
+    width: 100%;
+    height: auto;
+    border-radius: 12px; /* bordas arredondadas como no exemplo */
+    display: block;
 }
