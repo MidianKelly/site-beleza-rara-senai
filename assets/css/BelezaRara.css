@@ -5,7 +5,7 @@ body {
 
 /* Faixa preta no topo */
 .top-bar {
-    background-color: black;/* Cor de fundo preta */
+    background-color: #dd7900;/* Cor de fundo preta */
     color: white;           /* Texto em branco */
     text-align: center;       /* Centraliza o texto */
     padding: 5px 0;           /* Espaçamento interno: 5px top/bottom, 0 left/right */
@@ -29,6 +29,7 @@ body {
     font-weight: bold;        /* Negrito */
     text-transform: uppercase;/* Texto em maiúsculas */
     flex-shrink: 0;           /* Impede que o logo encolha em flex containers */
+    
   }
 
 /* Menu de navegação */
@@ -116,20 +117,24 @@ nav ul {
 }
 
 .produto img {
-    max-width: 50%;           /* Ocupa no máximo metade da largura do cartão */
-    border-radius: 8px;       /* Bordas arredondadas da imagem */
+  width: 150px;             /* Define a largura fixa */
+  height: 200px;            /* Define a altura fixa */
+  object-fit: contain;      /* Ajusta a imagem sem distorcer */
+  margin: 0 auto;           /* Centraliza a imagem dentro do card */
+  display: block;           /* Garante que o margin funcione */
 }
 
 .nome-produto {
     margin-top: 10px;         /* Espaço acima do nome do produto */
     font-size: 16px;          /* Fonte de 16px */
     text-align: left;
+    font-weight: bold;        /* deixa em negrito */
 }
 
   .btn-comprar {
     display: inline-block;    /* Permite aplicar padding e largura */
     margin-top: 10px;         /* Espaço acima do botão */
-    padding: 10px 150px;      /* Espaçamento interno: 10px acima/baixo, 150px lado a lado */
+    padding: 10px 60px;      /* Espaçamento interno: 10px acima/baixo, 150px lado a lado */
     background: #e95d00;    /* Fundo laranja escuro */
     color: white;           /* Texto em branco */
     border: none;             /* Sem borda */
@@ -139,4 +144,42 @@ nav ul {
     cursor: pointer;          /* Cursor de clique no hover */
     transition: background 0.3s;/* Transição suave da cor de fundo */
     text-decoration: none;    /* Remove sublinhado de links */
+}
+
+.descricao-produto {
+  font-size: 14px;
+  color: #555;
+  margin: 10px 0;
+  min-height: 50px; /* garante altura igual para todas descrições */
+  display: flex;
+  align-items: center;
+  text-align: left; 
+  justify-content: flex-start; 
+}
+
+.selo-avaliacao {
+  display: flex;              /* Deixa os elementos (estrela, nota e tag) alinhados lado a lado */
+  align-items: center;        /* Centraliza os itens verticalmente dentro do container */
+  gap: 8px;                   /* Espaço de 8px entre cada item (estrela, nota e tag) */
+  margin: 8px 0;              /* Cria um espaço de 8px em cima e embaixo do selo */
+  font-size: 13px;            /* Define o tamanho padrão da fonte para os textos dentro do selo */
+}
+
+.selo-avaliacao .estrela {
+  color: gold;                /* Cor da estrela dourada */
+  font-size: 14px;            /* Tamanho da estrela (um pouco maior que o texto) */
+}
+
+.selo-avaliacao .nota {
+  font-weight: bold;          /* Deixa a nota em negrito (ex: 4.9) */
+  color: #333;                /* Cor cinza escuro da nota */
+}
+
+.selo-avaliacao .tag {
+  background: #f2f2f2;        /* Fundo cinza claro para a tag (ex: "Mais Vendido") */
+  color: #333;                /* Cor do texto dentro da tag */
+  font-size: 12px;            /* Tamanho da fonte da tag (um pouco menor que o resto) */
+  padding: 2px 6px;           /* Espaço interno da tag (vertical 2px, horizontal 6px) */
+  border-radius: 12px;        /* Bordas arredondadas, deixando a tag em formato de "pílula" */
+  font-weight: 500;           /* Peso médio da fonte (entre normal e bold) */
 }
