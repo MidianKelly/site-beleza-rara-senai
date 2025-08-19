@@ -1,162 +1,142 @@
 body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-}
+    margin: 0;/* Remove a margem padrão do navegador em volta da página */
+    font-family: Arial, sans-serif;/* Define Arial como fonte principal, com fallback para fonte sem serifa */ 
+  }
 
 /* Faixa preta no topo */
 .top-bar {
-    background-color: black;
-    color: white;
-    text-align: center;
-    padding: 5px 0;
-    font-weight: bold;
-    font-size: 14px;
-    letter-spacing: 0.5px;
-}
+    background-color: black;/* Cor de fundo preta */
+    color: white;           /* Texto em branco */
+    text-align: center;       /* Centraliza o texto */
+    padding: 5px 0;           /* Espaçamento interno: 5px top/bottom, 0 left/right */
+    font-weight: bold;        /* Texto em negrito */
+    font-size: 14px;          /* Tamanho da fonte de 14px */
+    letter-spacing: 0.5px;    /* Espaçamento entre letras de 0.5px */
+  }
 
 /* Container do cabeçalho */
 .header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 15px 40px;
-    border-bottom: 1px solid #ddd;
-}
+    display: flex;            /* Define um contêiner Flexbox (layout flexível) */
+    justify-content: space-between; /* Distribui os itens com espaço igual entre eles */
+    align-items: center;      /* Alinha verticalmente os itens ao centro */
+    padding: 15px 40px;       /* Padding: 15px (top/bottom), 40px (left/right) */
+    border-bottom: 1px solid #ddd;/* Linha inferior de 1px cinza clara */
+  }
 
 /* Logo */
 .logo {
-    font-size: 20px;
-    font-weight: bold;
-    text-transform: uppercase;
-    flex-shrink: 0;
-}
+    font-size: 20px;          /* Tamanho da fonte de 20px */
+    font-weight: bold;        /* Negrito */
+    text-transform: uppercase;/* Texto em maiúsculas */
+    flex-shrink: 0;           /* Impede que o logo encolha em flex containers */
+  }
 
 /* Menu de navegação */
 nav ul {
-    display: flex;
-    list-style: none;
-    gap: 20px;
-    padding: 0;
-    margin: 0;
-    font-size: 16px;
-    font-weight: 500;
-}
+    display: flex;            /* Menu como flex container */
+    list-style: none;         /* Remove marcadores da lista */
+    gap: 20px;                /* Espaçamento de 20px entre itens */
+    padding: 0;               /* Remove padding padrão */
+    margin: 0;                /* Remove margem padrão */
+    font-size: 16px;          /* Fonte de 16px */
+    font-weight: 500;         /* Peso intermediário da fonte */
+  }
 
-nav ul li {
-    cursor: pointer;
-    transition: color 0.3s;
-}
-
-nav ul li:hover {
-    color: #888;
-}
+  nav ul li {
+    cursor: pointer;          /* Cursor muda para mãozinha ao passar por cima */
+    transition: color 0.3s;   /* Transição suave da cor ao passar o mouse */
+  }
+  nav ul li:hover {
+    color: #888;            /* Cor muda para cinza ao passar o mouse */
+  }
 
 /* Área de ícones */
 .icons {
-    display: flex;
-    align-items: center;
-    gap: 15px;
-}
-
-.icons img {
-    width: 20px;
-    height: 20px;
-    cursor: pointer;
-}
+    display: flex;            /* Contêiner flexível para ícones */
+    align-items: center;      /* Ícones alinhados verticalmente ao centro */
+    gap: 15px;                /* Espaço de 15px entre os ícones */
+  }
+  .icons img {
+    width: 20px;              /* Largura fixa de 20px */
+    height: 20px;             /* Altura fixa de 20px */
+    cursor: pointer;          /* Cursor de clique */
+  }
 
 /* Conta com texto */
 .account {
-    display: flex;
-    align-items: center;
-    gap: 8px;
+    display: flex;            /* Agrupa ícone e texto como flex items */
+    align-items: center;      /* Alinhamento central vertical */
+    gap: 8px;                 /* Espaço entre ícone e texto */
 }
-
 .account img {
     width: 20px;
     height: 20px;
 }
-
 .account .main-text {
-    font-size: 13px;
-    font-weight: bold;
+    font-size: 13px;          /* Fonte maior para destaque */
+    font-weight: bold;        /* Negrito */
 }
-
 .account .sub-text {
-    font-size: 11px;
-    color: #555;
+    font-size: 11px;          /* Fonte menor para subtítulo */
+    color: #555;            /* Cor mais discreta */
 }
 
 .banner img {
-    width: 100%;
-    height: auto; /* altura do banner */
-    border-radius: 12px; /* bordas arredondadas como no exemplo */
-    display: block;
+  width: 100%;                /* Ocupa toda a largura disponível */
+  height: auto;               /* Mantém proporção da imagem */
+  border-radius: 12px;        /* Bordas arredondadas de 12px */
+  display: block;             /* Exibe como bloco (sem espaçamento inline) */
 }
 
 /* Seção de Produtos */
 .produtos {
-    padding: 40px;
-    text-align: center;
+    padding: 40px;            /* Espaçamento interno de 40px por todos os lados */
+    text-align: center;       /* Centraliza o texto dentro da seção */
 }
-
 .produtos h2 {
-    font-weight: bold;
-    margin-bottom: 30px;
+    font-weight: bold;        /* Título em negrito */
+    margin-bottom: 30px;      /* Espaço abaixo do título */
 }
 
 .produtos-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 20px;
+    display: grid;            /* Usa CSS Grid para layout */
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Colunas responsivas */
+    gap: 20px;                /* Espaço entre os itens do grid */
 }
-
 .produto {
-    position: relative;
-    border: 1px solid #eee;
-    padding: 15px;
-    border-radius: 10px;
-    background: #fff;
-    transition: transform 0.2s;
+    position: relative;       /* Permite posicionar elementos dentro dele de forma absoluta */
+    border: 1px solid #eee; /* Borda leve de 1px */
+    padding: 15px;            /* Padding interno de 15px */
+    border-radius: 10px;      /* Bordas arredondadas de 10px */
+    background: #fff;       /* Fundo branco */
+    transition: transform 0.2s;/* Suaviza transformações (como hover) */
 }
-
 .produto:hover {
-    transform: scale(1.05);
+    transform: scale(1.05);   /* Leve aumento no hover para destacar o item */
 }
 
 .produto img {
-    max-width: 50%;
-    border-radius: 8px;
-}
-
-.desconto {
-    position: absolute;
-    top: 10px;
-    left: 10px;
-    background: #f15b32;
-    color: #fff;
-    font-size: 14px;
-    padding: 5px 10px;
-    border-radius: 20px;
-    font-weight: bold;
+    max-width: 50%;           /* Ocupa no máximo metade da largura do cartão */
+    border-radius: 8px;       /* Bordas arredondadas da imagem */
 }
 
 .nome-produto {
-    margin-top: 10px;
-    font-size: 16px;
-    font-weight: bold;
+    margin-top: 10px;         /* Espaço acima do nome do produto */
+    font-size: 16px;          /* Fonte de 16px */
+    text-align: left;
 }
 
-.btn-comprar {
-    display: inline-block;
-    margin-top: 10px;
-    padding: 10px 20px;
-    background: #e95d00;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    font-size: 14px;
-    font-weight: bold;
-    cursor: pointer;
-    transition: background 0.3s;
-    text-decoration: none;
+  .btn-comprar {
+    display: inline-block;    /* Permite aplicar padding e largura */
+    margin-top: 10px;         /* Espaço acima do botão */
+    padding: 10px 150px;      /* Espaçamento interno: 10px acima/baixo, 150px lado a lado */
+    background: #e95d00;    /* Fundo laranja escuro */
+    color: white;           /* Texto em branco */
+    border: none;             /* Sem borda */
+    border-radius: 5px;       /* Bordas arredondadas leves */
+    font-size: 12px;          /* Fonte de 14px */
+    font-weight: bold;        /* Negrito */
+    cursor: pointer;          /* Cursor de clique no hover */
+    transition: background 0.3s;/* Transição suave da cor de fundo */
+    text-decoration: none;    /* Remove sublinhado de links */
 }
