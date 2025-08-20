@@ -1,6 +1,6 @@
 body {
     margin: 0;/* Remove a margem padrão do navegador em volta da página */
-    font-family: Arial, sans-serif;/* Define Arial como fonte principal, com fallback para fonte sem serifa */ 
+    font-family:  Open, sans-serif;/* Define Arial como fonte principal, com fallback para fonte sem serifa */ 
   }
 
 /* Faixa preta no topo */
@@ -182,5 +182,14 @@ nav ul {
   padding: 2px 6px;           /* Espaço interno da tag (vertical 2px, horizontal 6px) */
   border-radius: 12px;        /* Bordas arredondadas, deixando a tag em formato de "pílula" */
   font-weight: 500;           /* Peso médio da fonte (entre normal e bold) */
+}
+
+.preco-produto {
+    font-weight: bold;
+    color: #333;
+    font-size: 1.1em;
+    margin: 5px 0;
+    text-align: left;
+    color: rgb(255, 136, 0);
 }
 
