@@ -63,16 +63,7 @@ nav ul {
     cursor: pointer;          /* Cursor de clique */
   }
 
-/* Conta com texto */
-.account {
-    display: flex;            /* Agrupa ícone e texto como flex items */
-    align-items: center;      /* Alinhamento central vertical */
-    gap: 8px;                 /* Espaço entre ícone e texto */
-}
-.account img {
-    width: 20px;
-    height: 20px;
-}
+
 .account .main-text {
     font-size: 13px;          /* Fonte maior para destaque */
     font-weight: bold;        /* Negrito */
@@ -193,3 +184,110 @@ nav ul {
     color: rgb(255, 136, 0);
 }
 
+.account {
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background-color: #e95d00;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    user-select: none;
+    font-weight: bold;
+    margin: 20px;
+  }
+  .account img {
+    width: 20px;
+    height: 20px;
+  }
+
+/* Modal geral */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1001;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+/* Conteúdo do modal */
+.modal-content {
+    background-color: #fff;
+    margin: 10% auto;
+    padding: 30px;
+    border-radius: 8px;
+    width: 90%;
+    max-width: 400px;
+    position: relative;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.modal-content h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.modal-content label {
+    display: block;
+    margin: 10px 0 5px;
+    font-weight: bold;
+}
+
+.modal-content input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+
+.modal-content button[type="submit"] {
+    width: 100%;
+    padding: 12px;
+    background-color: #a0522d;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.modal-content button[type="submit"]:hover {
+    background-color: #8b4513;
+}
+
+.close-button {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 24px;
+    cursor: pointer;
+    color: #aaa;
+}
+
+.close-button:hover {
+    color: #000;
+}
+
+.abrir-login {
+    text-align: center;
+    margin-top: 40px;
+}
+
+#abrirLoginBtn {
+    padding: 10px 20px;
+    background-color: #a0522d;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#abrirLoginBtn:hover {
+    background-color: #8b4513;
+}
