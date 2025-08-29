@@ -49,12 +49,12 @@
             </div>
             <img id="iconeBusca" src="https://img.icons8.com/ios/24/search--v1.png" alt="Buscar"
                 style="cursor: pointer;" />
-            <img src="https://img.icons8.com/ios/24/shopping-bag--v1.png" alt="Carrinho">
+            <img src="https://img.icons8.com/ios/24/shopping-bag--v1.png" id="iconeCarrinho" alt="Carrinho">
         </div>
     </header>
 
     <div class="banner">
-        <img src="https://images.tcdn.com.br/img/img_prod/702874/1720806844_banner_2.jpg" alt="banner">
+        <img src="../assets/css/img/banner.png" alt="banner">
     </div>
 
     <!-- Seção de Produtos -->
@@ -206,7 +206,7 @@
                     <span class="estrela">★</span>
                     <span class="nota">4.9</span>
                 </div>
-                <p class="nome-produto">Perfume jardim de almura</p>
+                <p class="nome-produto">Perfume j. de almura</p>
                 <p class="descricao-produto">Um sopro floral envolvente, puro e encantador.</p>
                 <p class="preco-produto">R$ 84,90</p>
                 <a href="#" class="btn-comprar" data-nome="Perfume jardim de almura" data-preco="84.90">Comprar</a>
@@ -219,7 +219,7 @@
                     <span class="estrela">★</span>
                     <span class="nota">4.8</span>
                 </div>
-                <p class="nome-produto">Perfume maresia ocidental</p>
+                <p class="nome-produto">Perfume m. ocidental</p>
                 <p class="descricao-produto">Brisa marinha com um toque de liberdade e frescor.</p>
                 <p class="preco-produto">R$ 74,90</p>
                 <a href="#" class="btn-comprar" data-nome="Perfume maresia ocidental" data-preco="74.90">Comprar</a>
@@ -345,7 +345,7 @@
                     <span class="estrela">★</span>
                     <span class="nota">4.5</span>
                 </div>
-                <p class="nome-produto">Perfume sonho encantado</p>
+                <p class="nome-produto">Perfume s. encantado</p>
                 <p class="descricao-produto">Frescor e elegância que inspiram liberdade.</p>
                 <p class="preco-produto">R$ 59,90</p>
                 <a href="#" class="btn-comprar" data-nome="Perfume sonho encantado" data-preco="59.90">Comprar</a>
@@ -558,7 +558,7 @@
 
 
             <!-- falta esses -->
-             
+
             <!-- Sabonete em barra -->
             <div class="produto">
                 <img src="../assets/css/img/sabonete barra/baunilha.PNG" alt="Sabonete baunilha">
@@ -1075,7 +1075,7 @@
                 <div class="selo-avaliacao"><span class="estrela">★</span>
                     <span class="nota">4.2</span>
                 </div>
-                <p class="nome-produto">Bodysplash brume d'Eté</p>
+                <p class="nome-produto">Bodysplash d'Eté</p>
                 <p class="descricao-produto">Essência suave e elegante.</p>
                 <p class="preco-produto">R$ 42,90</p>
                 <a href="#" class="btn-comprar">Comprar</a>
@@ -1086,7 +1086,7 @@
                 <div class="selo-avaliacao"><span class="estrela">★</span>
                     <span class="nota">4.4</span>
                 </div>
-                <p class="nome-produto">Bodysplash doce encanto</p>
+                <p class="nome-produto">Bodysplash d. encanto</p>
                 <p class="descricao-produto">Aroma doce e envolvente.</p>
                 <p class="preco-produto">R$ 42,90</p>
                 <a href="#" class="btn-comprar">Comprar</a>
@@ -1119,7 +1119,7 @@
                 <div class="selo-avaliacao"><span class="estrela">★</span>
                     <span class="nota">4.6</span>
                 </div>
-                <p class="nome-produto">Bodysplash pura Essência</p>
+                <p class="nome-produto">Bodysplash p. essência</p>
                 <p class="descricao-produto">Essência pura e refrescante.</p>
                 <p class="preco-produto">R$ 42,90</p>
                 <a href="#" class="btn-comprar">Comprar</a>
@@ -1130,7 +1130,7 @@
                 <div class="selo-avaliacao"><span class="estrela">★</span>
                     <span class="nota">4.5</span>
                 </div>
-                <p class="nome-produto">Bodysplash rose Éternelle</p>
+                <p class="nome-produto">Bodysplash Éternelle</p>
                 <p class="descricao-produto">Aroma floral romântico e delicado.</p>
                 <p class="preco-produto">R$ 42,90</p>
                 <a href="#" class="btn-comprar">Comprar</a>
@@ -1141,7 +1141,7 @@
                 <div class="selo-avaliacao"><span class="estrela">★</span>
                     <span class="nota">4.4</span>
                 </div>
-                <p class="nome-produto">Bodysplash velour vanille</p>
+                <p class="nome-produto">Bodysplash vanille</p>
                 <p class="descricao-produto">Doce baunilha envolvente e suave.</p>
                 <p class="preco-produto">R$ 42,90</p>
                 <a href="#" class="btn-comprar">Comprar</a>
@@ -1195,19 +1195,6 @@
                 <button type="submit" class="btn-buscar">🔍</button>
                 <span id="fecharBusca" class="fechar">×</span>
             </form>
-
-            <div class="conteudo-extra">
-                <div class="mais-buscados">
-                    <h3>Termos mais buscados</h3>
-                    <ul class="termos-lista">
-                        <li><button type="button" class="termo-btn">Perfumes</button></li>
-                        <li><button type="button" class="termo-btn">Maquiagem</button></li>
-                        <li><button type="button" class="termo-btn">Skincare</button></li>
-                        <li><button type="button" class="termo-btn">Kits</button></li>
-                    </ul>
-                </div>
-            </div>
-
             <div id="resultadosBusca" class="resultados-busca"></div>
         </div>
     </div>
@@ -1217,26 +1204,36 @@
             <h3>CARRINHO <span id="qtdItens">(0 itens)</span></h3>
             <span class="fechar-carrinho" onclick="fecharCarrinho()">×</span>
         </div>
+
         <div id="listaCarrinho" class="carrinho-itens"></div>
 
-        <div class="resumo">
-            <label><input type="checkbox" /> Frete Carbono Neutro <small>(+R$ 1,60)</small></label>
-
-            <p>Subtotal: <span id="subtotal">R$ 0,00</span></p>
-
-            <div class="input-group">
-                <label>Desconto:</label>
-                <input type="text" id="cupom" placeholder="Insira o código" />
-                <button onclick="aplicarDesconto()">APLICAR</button>
+        <!-- RESUMO MELHORADO -->
+        <div class="resumo-carrinho">
+            <div class="linha-carrinho">
+                <span>Subtotal:</span>
+                <span id="subtotal">R$ 0,00</span>
             </div>
 
-            <div class="input-group">
-                <label>Frete:</label>
-                <input type="text" id="cep" placeholder="Insira o CEP" />
-                <button onclick="calcularFrete()">ESTIMAR</button>
+            <div class="linha-carrinho desconto">
+                <label for="cupom">Desconto:</label>
+                <div class="input-group">
+                    <input type="text" id="cupom" placeholder="Insira o código">
+                    <button onclick="aplicarDesconto()">Aplicar</button>
+                </div>
             </div>
 
-            <p><strong>Total:</strong> <span id="total">R$ 0,00</span></p>
+            <div class="linha-carrinho frete">
+                <label for="cep">Frete:</label>
+                <div class="input-group">
+                    <input type="text" id="cep" placeholder="Insira o CEP">
+                    <button onclick="calcularFrete()">Estimar</button>
+                </div>
+            </div>
+
+            <div class="linha-carrinho total">
+                <strong>Total:</strong>
+                <strong id="total">R$ 0,00</strong>
+            </div>
 
             <button class="btn-finalizar" onclick="finalizarPedido()">FINALIZAR PEDIDO</button>
         </div>
@@ -1471,6 +1468,43 @@
             loginModal.style.display = 'none';
         });
 
+        const iconeCarrinho = document.getElementById("iconeCarrinho");
+        if (iconeCarrinho) {
+            iconeCarrinho.addEventListener("click", () => {
+                abrirCarrinho();
+            });
+        }
+
+        // Seletores
+        const inputCEP = document.querySelector("#cep");
+        const btnEstimar = document.querySelector("#btnEstimar");
+        const subtotalEl = document.querySelector("#subtotal");
+        const freteEl = document.querySelector("#frete");
+        const totalEl = document.querySelector("#total");
+
+        // Função para calcular frete
+        function calcularFrete() {
+            let subtotal = parseFloat(subtotalEl.dataset.valor); // pega o valor real
+            let cep = inputCEP.value.trim();
+            let frete = 20.0; // valor fixo de exemplo
+
+            // Regras de frete grátis
+            if (subtotal >= 500) {
+                frete = 0;
+            }
+
+            // Aqui você poderia criar regras diferentes por região
+            // Exemplo: se começa com "1" = frete 25, se começa com "9" = frete 30, etc.
+
+            // Atualiza na tela
+            freteEl.textContent = "R$ " + frete.toFixed(2).replace(".", ",");
+            totalEl.textContent = "R$ " + (subtotal + frete).toFixed(2).replace(".", ",");
+        }
+
+        // Clique no botão ESTIMAR
+        btnEstimar.addEventListener("click", calcularFrete);
+
+        
 
     </script>
 

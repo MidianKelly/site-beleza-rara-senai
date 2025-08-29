@@ -117,7 +117,7 @@ nav ul li:hover {
 .banner img {
   width: 100%;
   /* Ocupa toda a largura disponível */
-  height: auto;
+  height: 1000px;
   /* Mantém proporção da imagem */
   border-radius: 12px;
   /* Bordas arredondadas de 12px */
@@ -197,11 +197,11 @@ nav ul li:hover {
   /* Espaço acima do botão */
   padding: 10px 60px;
   /* Espaçamento interno: 10px acima/baixo, 150px lado a lado */
-  background: #e67308;
+  background:transparent;
   /* Fundo laranja escuro */
-  color: white;
+  color: #e67003;
   /* Texto em branco */
-  border: none;
+  border: 2px  solid #e67003;
   /* Sem borda */
   border-radius: 5px;
   /* Bordas arredondadas leves */
@@ -343,7 +343,7 @@ nav ul li:hover {
 .modal-content button[type="submit"] {
   width: 100%;
   padding: 12px;
-  background-color: #a0522d;
+  background-color: #e67003;
   color: white;
   border: none;
   border-radius: 4px;
@@ -353,7 +353,7 @@ nav ul li:hover {
 }
 
 .modal-content button[type="submit"]:hover {
-  background-color: #8b4513;
+  background-color: #e67003;
 }
 
 .close-button {
@@ -439,14 +439,15 @@ nav ul li:hover {
   background: #fff;
   padding: 30px 40px;
   border-radius: 12px;
-  max-width: 600px;
+  max-width: 700px; /* mais largo para dar espaço aos produtos */
   width: 100%;
-  max-height: 90vh; /* ⬅ evita ultrapassar a tela */
-  overflow-y: auto; /* ⬅ permite rolagem se passar da altura */
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
-  text-align: center;
-  position: relative; /* ⬅ necessário se quiser posicionar o botão "fechar" corretamente */
+  max-height: 85vh;
+  overflow-y: auto;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.25);
+  text-align: left; /* melhor que centralizar tudo */
+  position: relative;
 }
+
 #formBusca {
   display: flex;
   align-items: center;
@@ -516,8 +517,12 @@ nav ul li:hover {
 }
 
 .resultado-item {
-  padding: 10px;
-  border-bottom: 1px solid #ddd;
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+  padding: 15px;
+  border-bottom: 1px solid #eee;
+  transition: background 0.2s;
 }
 
 .resultado-item strong {
@@ -658,3 +663,4 @@ nav ul li:hover {
 .tab-content.active {
   display: block;
 }
+/* Cursor de clique */
