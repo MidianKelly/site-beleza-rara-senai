@@ -90,13 +90,14 @@ nav ul li:hover {
 }
 
 .nav-bar li:hover {
-  color: #1D074D; 
+  color: #1D074D;
 }
 
 .icons {
   display: flex;
   align-items: center;
-  gap: 20px; /* Esse valor pode ser diferente do seu atual (15px) */
+  gap: 20px;
+  /* Esse valor pode ser diferente do seu atual (15px) */
   font-size: 14px;
 }
 
@@ -139,13 +140,6 @@ nav ul li:hover {
   /* Espaçamento interno de 40px por todos os lados */
   text-align: center;
   /* Centraliza o texto dentro da seção */
-}
-
-.produtos h2 {
-  font-weight: bold;
-  /* Título em negrito */
-  margin-bottom: 30px;
-  /* Espaço abaixo do título */
 }
 
 .produtos-grid {
@@ -205,11 +199,11 @@ nav ul li:hover {
   /* Espaço acima do botão */
   padding: 10px 60px;
   /* Espaçamento interno: 10px acima/baixo, 150px lado a lado */
-  background:transparent;
+  background: transparent;
   /* Fundo laranja escuro */
   color: #1D074D;
   /* Texto em branco */
-  border: 2px  solid #1D074D;
+  border: 2px solid #1D074D;
   /* Sem borda */
   border-radius: 5px;
   /* Bordas arredondadas leves */
@@ -441,17 +435,18 @@ nav ul li:hover {
   transition: opacity 0.3s ease;
 }
 
-
 .busca-container {
   background: #fff;
   padding: 30px 40px;
   border-radius: 12px;
-  max-width: 700px; /* mais largo para dar espaço aos produtos */
+  max-width: 700px;
+  /* mais largo para dar espaço aos produtos */
   width: 100%;
   max-height: 85vh;
   overflow-y: auto;
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.25);
-  text-align: left; /* melhor que centralizar tudo */
+  text-align: left;
+  /* melhor que centralizar tudo */
   position: relative;
 }
 
@@ -632,6 +627,7 @@ nav ul li:hover {
   from {
     opacity: 0;
   }
+
   to {
     opacity: 1;
   }
@@ -681,11 +677,30 @@ nav button {
 }
 
 nav button:hover {
-  color: #1D074D; /* cor de destaque ao passar o mouse */
+  color: #1D074D;
+  /* cor de destaque ao passar o mouse */
 }
 
 nav button:focus {
   outline: none;
-  color: #1D074D; /* foco visual */
+  color: #1D074D;
+  /* foco visual */
   font-weight: bold;
+}
+
+.titulo-categoria {
+  text-align: center;
+  font-size: 28px;
+  font-weight: bold;
+  margin: 30px 0;
+  font-weight: bold;
+  margin-bottom: 30px;
+   text-transform: uppercase;
+}
+
+.historia h2 {
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 30px;
+  color: #000;
 }

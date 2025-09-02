@@ -22,7 +22,7 @@
         <div class="header-top">
             <!-- Logo central -->
             <div class="logo">
-                <img src="../assets/css/img/logoempresa.png" width="150" alt="Logo da empresa">
+                <img src="../assets/css/img/logoempresa.png" width="200" alt="Logo da empresa">
             </div>
 
             <!-- Ícones à direita -->
@@ -47,20 +47,21 @@
                 <button type="button" onclick="filtrarProdutos('maquiagem')">MAQUIAGENS</button>
                 <button type="button" onclick="filtrarProdutos('cremes')">CREMES</button>
                 <button type="button" onclick="filtrarProdutos('skincare')">SKINCARE</button>
-                <button type="button" onclick="filtrarProdutos('perfume')">SABONETES</button>
-                <button type="button" onclick="filtrarProdutos('perfume')">KITS</button>
-                <button type="button" onclick="filtrarProdutos('perfume')">HISTÓRIA</button>
-                <button type="button" onclick="filtrarProdutos('perfume')">LOCALIZAÇÃO</button>
-                <button type="button" onclick="filtrarProdutos('perfume')">APOIOS</button>
-                <button type="button" onclick="filtrarProdutos('perfume')">POLÍTICAS</button>
-                <button type="button" onclick="filtrarProdutos('perfume')">PROJETO</button>
+                <button type="button" onclick="filtrarProdutos('sabonete')">SABONETES</button>
+                <button type="button" onclick="filtrarProdutos('kits')">KITS</button>
+                <button type="button" onclick="filtrarProdutos('historia')">HISTÓRIA</button>
+                <button type="button" onclick="filtrarProdutos('localizacao')">LOCALIZAÇÃO</button>
+                <button type="button" onclick="filtrarProdutos('apoios')">APOIOS</button>
+                <button type="button" onclick="filtrarProdutos('politicas')">POLÍTICAS</button>
+                <button type="button" onclick="filtrarProdutos('projetos')">PROJETO</button>
             </ul>
         </nav>
+
+        <h2 id="titulo-categoria" class="titulo-categoria"></h2>
     </header>
 
     <!-- Seção de Produtos -->
     <section class="produtos">
-        <h2>TODOS OS PRODUTOS</h2>
         <div class="produtos-grid">
 
             <!-- Cremes unissex -->
@@ -746,7 +747,7 @@
             </div>
 
             <!-- Cremes em pote -->
-            <div class="produto cremes">
+            <div class="produto skincare">
                 <img src="../assets/css/img/skincare/energy.PNG" alt="Energy">
                 <div class="selo-avaliacao"><span class="estrela">★</span>
                     <span class="nota">4.9</span>
@@ -757,7 +758,7 @@
                 <a href="#" class="btn-comprar" data-nome="Floralis energy skincare" data-preco="49.90">Comprar</a>
             </div>
 
-            <div class="produto cremes">
+            <div class="produto skincare">
                 <img src="../assets/css/img/skincare/calmante.PNG" alt="Calmante">
                 <div class="selo-avaliacao"><span class="estrela">★</span>
                     <span class="nota">4.5</span>
@@ -768,7 +769,7 @@
                 <a href="#" class="btn-comprar" data-nome="Floralis calmante skincare" data-preco="49.90">Comprar</a>
             </div>
 
-            <div class="produto cremes">
+            <div class="produto skincare">
                 <img src="../assets/css/img/skincare/hidratante.PNG" alt="Hidratante">
                 <div class="selo-avaliacao"><span class="estrela">★</span>
                     <span class="nota">4.8</span>
@@ -779,7 +780,7 @@
                 <a href="#" class="btn-comprar" data-nome="Floralis hidratante" data-preco="49.90">Comprar</a>
             </div>
 
-            <div class="produto cremes">
+            <div class="produto skincare">
                 <img src="../assets/css/img/skincare/matificante.PNG" alt="Matificante">
                 <div class="selo-avaliacao"><span class="estrela">★</span>
                     <span class="nota">4.4</span>
@@ -790,7 +791,7 @@
                 <a href="#" class="btn-comprar" data-nome="Floralis matificante" data-preco="49.90">Comprar</a>
             </div>
 
-            <div class="produto cremes">
+            <div class="produto skincare">
                 <img src="../assets/css/img/skincare/nutritivo.PNG" alt="Nutritivo">
                 <div class="selo-avaliacao"><span class="estrela">★</span>
                     <span class="nota">4.7</span>
@@ -801,7 +802,7 @@
                 <a href="#" class="btn-comprar" data-nome="Floralis nutritivo" data-preco="49.90">Comprar</a>
             </div>
 
-            <div class="produto cremes">
+            <div class="produto skincare">
                 <img src="../assets/css/img/skincare/renova.PNG" alt="Renova">
                 <div class="selo-avaliacao"><span class="estrela">★</span>
                     <span class="nota">4.6</span>
@@ -812,7 +813,7 @@
                 <a href="#" class="btn-comprar" data-nome="Floralis renova" data-preco="49.90">Comprar</a>
             </div>
 
-            <div class="produto cremes">
+            <div class="produto skincare">
                 <img src="../assets/css/img/skincare/revitalizante.PNG" alt="Revitalizante">
                 <div class="selo-avaliacao"><span class="estrela">★</span>
                     <span class="nota">4.5</span>
@@ -1125,6 +1126,97 @@
                 <a href="#" class="btn-comprar" data-nome="Bodysplash vanille" data-preco="42.90">Comprar</a>
             </div>
 
+            <!-- kits -->
+             <div class="produto kits">
+                <img src="../assets/css/img/kits/base+corretivo.png" alt="Base + Corretivo">
+                <div class="selo-avaliacao"><span class="estrela">★</span><span class="nota">4.9</span></div>
+                <p class="nome-produto">Base e corretivo</p>
+                <p class="descricao-produto">Make impecável:base e corretivo.</p>
+                <p class="preco-produto">R$ 35,90</p>
+                <a href="#" class="btn-comprar" data-nome="Base e corretivo" data-preco="32.90">Comprar</a>
+            </div>
+
+            <div class="produto kits">
+                <img src="../assets/css/img/kits/mascara carvao+vitamina c.png" alt="carvao + vitamina c">
+                <div class="selo-avaliacao"><span class="estrela">★</span><span class="nota">4.3</span></div>
+                <p class="nome-produto">Máscara carvão e vitamina c</p>
+                <p class="descricao-produto">Pele limpa, iluminada e renovada.</p>
+                <p class="preco-produto">R$ 35,90</p>
+                <a href="#" class="btn-comprar" data-nome="Máscara carvão e vitamina c" data-preco="35.90">Comprar</a>
+            </div>
+
+            <div class="produto kits">
+                <img src="../assets/css/img/kits/mascara regeneracao+nutricao.png" alt="regeneracao + nutricao">
+                <div class="selo-avaliacao"><span class="estrela">★</span><span class="nota">4.9</span></div>
+                <p class="nome-produto">Máscara otoro e nutrição</p>
+                <p class="descricao-produto">Regeneração e nutrição para pele saudável.</p>
+                <p class="preco-produto">R$ 35,90</p>
+                <a href="#" class="btn-comprar" data-nome="Máscara otoro e nutrição" data-preco="35.90">Comprar</a>
+            </div>
+
+            <div class="produto kits">
+                <img src="../assets/css/img/kits/serum clareador+ gel hidratante.png" alt="clareador + gel hidratante">
+                <div class="selo-avaliacao"><span class="estrela">★</span><span class="nota">4.6</span></div>
+                <p class="nome-produto">Sérum e gel hidratante</p>
+                <p class="descricao-produto">Hidratação e clareamento para sua pele.</p>
+                <p class="preco-produto">R$ 49,90</p>
+                <a href="#" class="btn-comprar" data-nome="Sérum e gel hidratante" data-preco="49.90">Comprar</a>
+            </div>
+
+            <div class="produto kits">
+                <img src="../assets/css/img/kits/serum+creme hidratante.png" alt="serum hidratante + creme hidratante">
+                <div class="selo-avaliacao"><span class="estrela">★</span><span class="nota">4.1</span></div>
+                <p class="nome-produto">Sérum e creme hidratante</p>
+                <p class="descricao-produto">Hidratação profunda para pele revitalizada.</p>
+                <p class="preco-produto">R$ 63,90</p>
+                <a href="#" class="btn-comprar" data-nome="Sérum e creme hidratante" data-preco="63.90">Comprar</a>
+            </div>
+
+            <div class="produto kits">
+                <img src="../assets/css/img/kits/perfume orvalho +creme orvalho+sabonete luz oriente.png" alt="perfume orvalho + creme + sabonete">
+                <div class="selo-avaliacao"><span class="estrela">★</span><span class="nota">4.8</span></div>
+                <p class="nome-produto">Perfume, creme e sabonete</p>
+                <p class="descricao-produto">Essência natural para sua rotina diária.</p>
+                <p class="preco-produto">R$ 118,90</p>
+                <a href="#" class="btn-comprar" data-nome="Perfume, creme e sabonete" data-preco="118.90">Comprar</a>
+            </div>
+
+            <div class="produto kits">
+                <img src="../assets/css/img/kits/perfume azure+creme marinho+sabonete nuvem.png" alt="perfume azure + creme + sabonete">
+                <div class="selo-avaliacao"><span class="estrela">★</span><span class="nota">4.3</span></div>
+                <p class="nome-produto">Perfume,creme e sabonete</p>
+                <p class="descricao-produto">Frescor e conforto em cada toque.</p>
+                <p class="preco-produto">R$ 132,90</p>
+                <a href="#" class="btn-comprar" data-nome="Perfume,creme e sabonete" data-preco="132.90">Comprar</a>
+            </div>
+
+             <div class="produto kits">
+                <img src="../assets/css/img/kits/perfume erva seca+ sabonete aurea.png" alt="perfume erva seca +sabonete aurea">
+                <div class="selo-avaliacao"><span class="estrela">★</span><span class="nota">4.8</span></div>
+                <p class="nome-produto">Perfume e sabonete</p>
+                <p class="descricao-produto">Elegância e sofisticação em harmonia perfeita.</p>
+                <p class="preco-produto">R$ 101,90</p>
+                <a href="#" class="btn-comprar" data-nome="Perfume e sabonete" data-preco="101.90">Comprar</a>
+            </div>
+
+            <div class="produto kits">
+                <img src="../assets/css/img/kits/creme aurora+perfume lirio.png" alt="perfume lirio +creme aurora">
+                <div class="selo-avaliacao"><span class="estrela">★</span><span class="nota">4.5</span></div>
+                <p class="nome-produto">Perfume e creme</p>
+                <p class="descricao-produto">Delicadeza floral para momentos de paz.</p>
+                <p class="preco-produto">R$ 83,90</p>
+                <a href="#" class="btn-comprar" data-nome="Perfume e creme" data-preco="83.90">Comprar</a>
+            </div>
+
+            <div class="produto kits">
+                <img src="../assets/css/img/kits/creme aurora+sabonete ipe.png" alt="creme auror+ sabonete ipe">
+                <div class="selo-avaliacao"><span class="estrela">★</span><span class="nota">4.8</span></div>
+                <p class="nome-produto">Creme e sabonete</p>
+                <p class="descricao-produto">Suavidade floral que inspira equilíbrio.</p>
+                <p class="preco-produto">R$ 63,90</p>
+                <a href="#" class="btn-comprar" data-nome="Creme e sabonete" data-preco="63.90">Comprar</a>
+            </div>
+
         </div>
         </div>
     </section>
@@ -1219,8 +1311,14 @@
         </div>
     </div>
 
+    <!-- Historia da empresa -->
+    <div class="historia">
+
+    </div>
 
     <script>
+        let descontoAplicado = 0;
+
         document.addEventListener('DOMContentLoaded', function () {
             const loginModal = document.getElementById('loginModal');
             const openLoginBtn = document.querySelector('.account');
@@ -1402,7 +1500,16 @@
         }
 
         function aplicarDesconto() {
-            alert("Funcionalidade de cupom ainda não implementada.");
+            const codigo = document.getElementById('codigoDesconto').value.trim().toLowerCase();
+
+            if (codigo === 'primeiracompra') {
+                descontoAplicado = 0.20;  // 20% de desconto
+                alert("Desconto de 20% aplicado com sucesso!");
+            } else {
+                descontoAplicado = 0;
+                alert("Código inválido.");
+            }
+            atualizarCarrinho();  // Atualiza o carrinho para aplicar o desconto
         }
 
         function calcularFrete() {
@@ -1464,7 +1571,27 @@
 
         function filtrarProdutos(categoria) {
             const produtos = document.querySelectorAll('.produto');
+            const titulo = document.getElementById("titulo-categoria");
 
+            const nomesCategorias = {
+                todos: "Todos os produtos",
+                perfume: "Todos os perfumes",
+                maquiagem: "Todas as maquiagens",
+                cremes: "Todos os cremes",
+                skincare: "Todos de skincare",
+                sabonete: "Todos os sabonetes",
+                kits: "Todos os kits",
+                historia: "Nossa História",
+                localizacao: "Localização",
+                apoios: "Apoios",
+                politicas: "Políticas",
+                projetos: "Projeto"
+            };
+
+            // Atualiza o título visível
+            titulo.textContent = nomesCategorias[categoria] || "";
+
+            // Filtra visualmente os produtos na tela
             produtos.forEach(produto => {
                 if (categoria === 'todos') {
                     produto.style.display = 'block';
