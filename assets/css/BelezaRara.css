@@ -144,11 +144,8 @@ nav ul li:hover {
 
 .produtos-grid {
   display: grid;
-  /* Usa CSS Grid para layout */
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  /* Colunas responsivas */
+  grid-template-columns: repeat(6, 1fr); /* Exatamente 5 colunas */
   gap: 20px;
-  /* Espaço entre os itens do grid */
 }
 
 .produto {
@@ -197,7 +194,7 @@ nav ul li:hover {
   /* Permite aplicar padding e largura */
   margin-top: 10px;
   /* Espaço acima do botão */
-  padding: 10px 60px;
+  padding: 10px 100px;
   /* Espaçamento interno: 10px acima/baixo, 150px lado a lado */
   background: transparent;
   /* Fundo laranja escuro */
@@ -704,3 +701,4 @@ nav button:focus {
   margin-bottom: 30px;
   color: #000;
 }
+
