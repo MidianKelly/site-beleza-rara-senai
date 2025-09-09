@@ -1,7 +1,7 @@
 body {
   margin: 0;
   /* Remove a margem padrão do navegador em volta da página */
-  font-family: Open, sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
   /* Define Arial como fonte principal, com fallback para fonte sem serifa */
 }
 
@@ -144,7 +144,8 @@ nav ul li:hover {
 
 .produtos-grid {
   display: grid;
-  grid-template-columns: repeat(6, 1fr); /* Exatamente 5 colunas */
+  grid-template-columns: repeat(6, 1fr);
+  /* Exatamente 5 colunas */
   gap: 20px;
 }
 
@@ -692,7 +693,7 @@ nav button:focus {
   margin: 30px 0;
   font-weight: bold;
   margin-bottom: 30px;
-   text-transform: uppercase;
+  text-transform: uppercase;
 }
 
 .historia h2 {
@@ -702,3 +703,80 @@ nav button:focus {
   color: #000;
 }
 
+.localizacao {
+  padding: 80px 20px;
+  text-align: center;
+  background: #fff;
+}
+
+.localizacao h2 {
+  font-size: 40px;
+  font-weight: 700;
+  color: #1D074D;
+  margin-bottom: 50px;
+  letter-spacing: 1px;
+}
+
+
+.localizacao h2::after {
+  content: "";
+  display: block;
+  width: 80px;
+  height: 3px;
+  background: #a46ee5;
+  margin: 15px auto 0;
+  border-radius: 5px;
+}
+
+.locais {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 50px;
+}
+
+.cd {
+  text-align: center;
+  max-width: 560px;
+  width: 100%;
+  padding: 20px;
+  background: #fff;
+  border: 5px solid #1D074D;
+  /* BORDA AO REDOR DE TUDO NO CARD */
+  border-radius: 16px;
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+  /* garante cantos arredondados no mapa */
+}
+
+.cd:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+.cd h3 {
+  font-size: 22px;
+  font-weight: 600;
+  color: #3d2b57;
+  margin-bottom: 18px;
+}
+
+.cd img {
+  border-radius: 12px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.12);
+  cursor: pointer;
+  transition: transform 0.4s ease;
+  width: 100%;
+  height: auto;
+}
+
+.cd img:hover {
+  transform: scale(1.05);
+}
+
+.cd p {
+  margin-top: 14px;
+  font-size: 15px;
+  color: #555;
+  line-height: 1.6;
+}
