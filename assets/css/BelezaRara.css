@@ -129,7 +129,7 @@ nav ul li:hover {
   /* Espaçamento interno de 40px por todos os lados */
   text-align: center;
   /* Centraliza o texto dentro da seção */
-  background: linear-gradient(to right, #1D074D, #5f35bb);
+
 }
 
 .produtos-grid {
@@ -137,7 +137,7 @@ nav ul li:hover {
   grid-template-columns: repeat(6, 1fr);
   /* Exatamente 5 colunas */
   gap: 20px;
-  
+
 }
 
 .produto {
@@ -153,7 +153,8 @@ nav ul li:hover {
   /* Fundo branco */
   transition: transform 0.2s;
   /* Suaviza transformações (como hover) */
-  
+
+
 }
 
 .produto:hover {
@@ -829,7 +830,7 @@ body {
   border-radius: 12px;
   box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
   display: block;
-  margin-left: 500px;
+  margin-left: 400px;
 }
 
 
@@ -846,7 +847,7 @@ body {
 .cta a {
   display: inline-block;
   background: var(--verde);
-  color: #fff;
+  color: #ffffff;
   text-decoration: none;
   padding: 12px 24px;
   border-radius: 999px;
@@ -864,4 +865,120 @@ body {
     grid-template-columns: 1fr;
     gap: 28px;
   }
+}
+
+.historia,
+.localizacao {
+  display: none;
+}
+
+/* Quando o filtro for 'todos', exibe novamente */
+.filtro-todos .historia,
+.filtro-todos .localizacao {
+  display: block;
+}
+
+.apoios {
+  padding: 50px 20px;
+  background-color: #ffffff;
+  text-align: center;
+}
+
+.apoios h2 {
+  font-size: 2em;
+  margin-bottom: 30px;
+}
+
+/* Container das logos (apoios) */
+.logos-apoio {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  /* Espaço entre as logos */
+  flex-wrap: wrap;
+  /* Para que as logos se movam para a linha seguinte em telas menores */
+}
+
+/* Estilo para cada item de logo */
+.logo-item {
+  width: 150px;
+  /* Largura padrão */
+  height: 150px;
+  /* Altura padrão */
+  display: flex;
+  flex-direction: column;
+  /* Faz com que o texto fique abaixo da imagem */
+  justify-content: center;
+  align-items: center;
+}
+
+/* Estilo para as imagens das logos */
+.logo-item img {
+  width: 100%;
+  /* A imagem vai ocupar toda a largura do item (150px) */
+  height: auto;
+  /* A altura vai ser ajustada automaticamente para manter a proporção */
+  max-height: 100%;
+  /* Garante que a imagem não ultrapasse a altura do container */
+  object-fit: contain;
+  /* Faz com que a imagem se ajuste bem dentro da área sem cortar ou distorcer */
+  transition: transform 0.3s ease;
+  /* Adiciona um efeito suave de transformação ao passar o mouse */
+}
+
+/* Efeito de hover nas imagens (para interação do usuário) */
+.logo-item:hover img {
+  transform: scale(1.1);
+  /* Aumenta ligeiramente a logo ao passar o mouse */
+}
+
+/* Responsividade: Ajusta as logos em telas menores */
+@media (max-width: 768px) {
+  .logos-apoio {
+    gap: 20px;
+    /* Diminui o espaço entre as logos em telas menores */
+  }
+
+  .logo-item {
+    width: 120px;
+    /* Ajusta o tamanho das logos para telas menores */
+    height: 120px;
+  }
+}
+
+.politica {
+  padding: 40px 20px;
+  background-color: #f8f8f8;
+  color: #333;
+  line-height: 1.6;
+}
+
+.politica h2,
+.politica h3 {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #1d074d;
+}
+
+.politica h3 {
+  margin-top: 30px;
+  font-size: 1.5em;
+}
+
+.politica ul {
+  list-style-type: disc;
+  margin-left: 20px;
+}
+
+.politica p {
+  margin-bottom: 15px;
+}
+
+.politica a {
+  color: #1d074d;
+  text-decoration: none;
+}
+
+.politica a:hover {
+  text-decoration: underline;
 }
