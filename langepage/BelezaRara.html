@@ -2,7 +2,7 @@
 <html lang="pt-BR">
 
 <head>
-    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Beleza Rara</title>
     <link rel="stylesheet" href="../assets/css/bootstrap.css"> <!-- Ajuste o caminho se necessário -->
@@ -52,7 +52,7 @@
                 <button type="button" onclick="filtrarProdutos('historia')">HISTÓRIA</button>
                 <button type="button" onclick="filtrarProdutos('localizacao')">LOCALIZAÇÃO</button>
                 <button type="button" onclick="filtrarProdutos('apoios')">APOIOS</button>
-                <button type="button" onclick="filtrarProdutos('politica')">POLÍTICAS</button>
+                <button type="button" onclick="filtrarProdutos('politicas')">POLÍTICAS</button>
                 <button type="button" onclick="filtrarProdutos('projetos')">PROJETO</button>
             </ul>
         </nav>
@@ -1354,7 +1354,7 @@
 
             <!-- CD 1 - Campinas -->
             <div class="cd">
-                <h3>CD 1 - Campinas SP</h3>
+                <h3>CD 1 - Palmas SP</h3>
                 <a href="https://www.google.com/maps/place/Rua+Ernesto+Alves+Filho,+461+-+Jardim+Campos+El%C3%ADseos,+Campinas+-+SP"
                     target="_blank">
                     <img src="../assets/css/img/mapas/Campinas,SP.png" alt="Mapa de Campinas">
@@ -1375,7 +1375,7 @@
         </div>
     </div>
 
-    <section class="apoios">
+    <div class="apoios">
         <div class="logos-apoio">
             <!-- Exemplo de logos de empresas parceiras -->
             <div class="logo-item">
@@ -1391,78 +1391,146 @@
                 <img src="../assets/css/img/Beauty Fair.png" alt="Beauty Fair">
             </div>
         </div>
+    </div>
+
+    <section class="politicas ">
+        <div class="politica-container">
+            <p class="politica-intro">
+                Prezamos pela transparência e queremos que sua experiência em nossa loja seja leve, segura e
+                encantadora.
+                Confira abaixo nossas políticas de privacidade, trocas, devoluções e envio.
+            </p>
+
+            <div class="politica-card">
+                <h3>1. Privacidade</h3>
+                <p>
+                    Seus dados são tratados com total segurança e confidencialidade. Utilizamos suas informações apenas
+                    para processar pedidos, melhorar sua experiência de navegação e enviar promoções personalizadas.
+                    Não compartilhamos, vendemos ou divulgamos seus dados pessoais a terceiros sem sua autorização,
+                    exceto quando necessário para a entrega dos produtos ou por exigência legal.
+                    Adotamos tecnologias seguras de proteção de dados, como criptografia e servidores certificados, para
+                    garantir que suas informações estejam sempre protegidas.
+                    A Beleza Rara segue rigorosamente a Lei Geral de Proteção de Dados (LGPD) e respeita sua privacidade
+                    em todas as etapas da sua jornada conosco.
+                    Você pode, a qualquer momento, solicitar a atualização ou exclusão dos seus dados pessoais.
+                    Nosso compromisso é oferecer uma experiência segura, transparente e ética para todos os nossos
+                    clientes.
+                </p>
+            </div>
+
+            <div class="politica-card">
+                <h3>2. Trocas & Devoluções</h3>
+                <ul>
+                    <li>Você tem <strong>7 dias corridos</strong>após o recebimento
+                        para solicitar troca ou devolução de qualquer produto, conforme o Código de Defesa do
+                        Consumidor..
+                    </li>
+
+                    <li>Para que a solicitação seja aceita, o item deve estar lacrado, sem sinais de uso e em perfeitas
+                        condições, com a embalagem original preservada.
+                    </li>
+
+                    <li>
+                        Caso tenha recebido um produto diferente do pedido ou com defeito, faremos a substituição sem
+                        custos adicionais.
+                    </li>
+
+                    <li>Nosso time está à disposição pelo e-mail <a
+                            href="mailto:suporte@belezarara.com">suporte@belezarara.com</a>.
+                    </li>
+                </ul>
+            </div>
+
+            <div class="politica-card">
+                <h3>3. Envio</h3>
+                <p>
+                    O valor do frete é calculado automaticamente no momento da finalização da compra, de acordo com o
+                    CEP e a região de entrega informada. Os prazos variam conforme a localidade e são exibidos antes da
+                    confirmação do pedido. Trabalhamos com transportadoras confiáveis para garantir a segurança e a
+                    agilidade no envio dos produtos. Você receberá atualizações por e-mail e poderá acompanhar o
+                    andamento da entrega. Nosso compromisso é realizar entregas rápidas, seguras e dentro do prazo
+                    previsto.
+                </p>
+            </div>
+
+            <div class="politica-card">
+                <h3>4. Garantia</h3>
+                <p>
+                    Todos os produtos comercializados pela Beleza Rara são originais, adquiridos diretamente de marcas
+                    confiáveis e com garantia de procedência. Prezamos pela qualidade e autenticidade em cada item
+                    oferecido. Caso você identifique qualquer defeito de fabricação, entre em contato imediatamente com
+                    nosso time de atendimento para que possamos avaliar e realizar a troca ou reembolso conforme
+                    necessário. Nossa prioridade é garantir que você receba um produto em perfeito estado. A satisfação
+                    e a confiança dos nossos clientes são fundamentais para nós.
+                </p>
+            </div>
+        </div>
     </section>
 
-    <section class="politica">
-        <p>Bem-vindo à Beleza Rara! Estamos comprometidos em oferecer uma experiência excepcional aos nossos clientes,
-            garantindo qualidade, transparência e segurança em todas as etapas da sua compra. Abaixo estão as nossas
-            políticas que regem a utilização do nosso site e serviços.</p>
+    <section class="projetos" id="projetos">
+        <div class="container-projetos">
+            <p class="descricao-projeto">
+                Com o objetivo de melhorar a eficiência logística, reduzir o lead time e proporcionar uma melhor
+                experiência aos clientes, a empresa Beleza Rara Cosméticos desenvolveu um projeto completo de expansão.
+                A iniciativa visa a implantação de um novo Centro de Distribuição ou uma Fábrica com CD em uma região
+                estratégica do Brasil.
+            </p>
 
-        <h3>1. Política de Privacidade</h3>
-        <p>Valorizamos a sua privacidade e estamos comprometidos em proteger seus dados pessoais. As informações
-            coletadas durante a navegação em nosso site serão usadas exclusivamente para processar seus pedidos e
-            melhorar a sua experiência de compra.</p>
-        <p>Não compartilhamos suas informações com terceiros, exceto quando necessário para processar pagamentos e
-            entregar seus pedidos. Para mais informações, consulte nossa <a href="/politica-de-privacidade">Política de
-                Privacidade Completa</a>.</p>
+            <div class="projeto-etapas">
+                <h3>ETAPAS DO PROJETO</h3>
+                <ul>
+                    <li> -Levantamento e plano de ação inicial com quadro Kanban;</li>
+                    <li> -Escolha da nova localização com análise estratégica;</li>
+                    <li> -Desenvolvimento de layout 3D do CD/Fábrica;</li>
+                    <li> -Estrutura necessária: física, tecnológica e operacional;</li>
+                    <li> -Documentação legal nacional e internacional;</li>
+                    <li> -Criação da logomarca e identidade organizacional;</li>
+                    <li> -Estimativa de investimento e análise SWOT;</li>
+                    <li> -Produção audiovisual e site institucional.</li>
+                </ul>
+            </div>
 
-        <h3>2. Política de Trocas e Devoluções</h3>
-        <p>Acreditamos na satisfação de nossos clientes e queremos que você fique feliz com sua compra. Caso o produto
-            não atenda às suas expectativas, temos uma política de trocas e devoluções simples.</p>
-        <ul>
-            <li>Você tem até <strong>7 dias corridos</strong> após o recebimento para solicitar a troca ou devolução.
-            </li>
-            <li>O produto deve estar em sua embalagem original, sem sinais de uso e com todos os itens inclusos.</li>
-            <li>Para realizar uma troca ou devolução, entre em contato com nossa central de atendimento através do
-                e-mail <strong>suporte@belezarara.com</strong> ou pelo telefone <strong>(11) 1234-5678</strong>.</li>
-            <li>O custo do envio para devolução será de responsabilidade do cliente, exceto em caso de defeito ou erro
-                no envio.</li>
-        </ul>
+            <div class="projeto-imgs">
+                <h3>VISUALIZAÇÃO DO PROJETO</h3>
+                <div class="galeria-projeto">
+                    <img src="../assets/css/img/layout-cd.jpg" alt="Layout do CD" />
+                    <img src="../assets/css/img/planta-industrial.jpg" alt="Planta da fábrica" />
+                    <img src="../assets/css/img/kanban.jpg" alt="Quadro Kanban do projeto" />
+                </div>
+            </div>
 
-        <h3>3. Política de Pagamento Seguro</h3>
-        <p>Oferecemos várias formas de pagamento seguras, incluindo:</p>
-        <ul>
-            <li>Cartão de Crédito (Visa, MasterCard, American Express, etc.)</li>
-            <li>Débito Online</li>
-            <li>Boleto Bancário</li>
-            <li>PayPal</li>
-        </ul>
-        <p>Todos os pagamentos são processados com criptografia de ponta e utilizam protocolos de segurança modernos
-            para proteger seus dados. Você pode comprar com total confiança!</p>
+            <div class="projeto-missao">
+                <h3>MISSÃO, VISÃO E VALORES</h3>
 
-        <h3>4. Política de Envio</h3>
-        <p>Realizamos entregas em todo o Brasil com prazos de envio variados dependendo da sua localização.</p>
-        <ul>
-            <li>O prazo de entrega é estimado durante o processo de checkout.</li>
-            <li>Oferecemos **frete grátis** para compras acima de R$200,00 (exceto para regiões remotas).</li>
-            <li>O tempo de envio pode variar de acordo com a transportadora e a região do destinatário.</li>
-            <li>Você poderá acompanhar o status da sua entrega diretamente no nosso site, acessando a seção "Meus
-                Pedidos".</li>
-        </ul>
+                <p><strong>Missão:</strong> Levar beleza, bem-estar e inovação aos nossos clientes por meio de produtos
+                    de alta qualidade e uma logística eficiente.</p>
 
-        <h3>5. Atendimento ao Cliente</h3>
-        <p>Estamos sempre à disposição para atender você! Caso tenha alguma dúvida ou problema, nossa equipe de
-            atendimento ao cliente está pronta para ajudar.</p>
-        <ul>
-            <li><strong>Por e-mail:</strong> suporte@belezarara.com</li>
-            <li><strong>Por telefone:</strong> (11) 1234-5678</li>
-            <li><strong>Atendimento via chat ao vivo:</strong> Disponível durante o horário comercial.</li>
-        </ul>
+                <p><strong>Visão:</strong> Ser referência nacional e internacional em logística cosmética, expandindo
+                    para as Américas até 2030.</p>
 
-        <h3>6. Segurança e Proteção de Dados</h3>
-        <p>Garantimos a segurança das suas informações pessoais. Utilizamos tecnologias avançadas para proteger seus
-            dados durante a navegação e no processo de pagamento. Para mais detalhes sobre como protegemos seus dados,
-            consulte nossa <a href="/politica-de-privacidade">Política de Privacidade Completa</a>.</p>
+                <div class="valores">
+                    <strong>Valores:</strong>
+                    <ul>
+                        <li>🌱 <strong>Sustentabilidade:</strong> Frascos de vidro reciclado e embalagens com elementos
+                            naturais, como folhas, para minimizar o impacto ambiental.</li>
+                        <li>📖 <strong>Transparência:</strong> Informações claras e acessíveis em embalagens e rótulos,
+                            garantindo que você saiba exatamente o que está usando.</li>
+                        <li>🤝 <strong>Inclusividade:</strong> Representação de diferentes tons de pele e estilos,
+                            celebrando a diversidade e a beleza em todas as suas formas.</li>
+                        <li>🐇 <strong>Cruelty-Free:</strong> Produtos livres de testes em animais, certificados com
+                            selo verde e ícones de coelho estilizado.</li>
+                        <li>✅ <strong>Qualidade:</strong> Compromisso com excelência em cada etapa da produção e
+                            distribuição.</li>
+                        <li>🚀 <strong>Inovação:</strong> Constante busca por soluções criativas, tecnológicas e
+                            sustentáveis para surpreender o mercado.</li>
+                        <li>🤝 <strong>Comprometimento:</strong> Dedicação com nossos clientes, parceiros e com o
+                            planeta.</li>
+                    </ul>
+                </div>
+            </div>
 
-        <h3>7. Alterações na Política</h3>
-        <p>A Beleza Rara pode alterar esta política a qualquer momento, a fim de melhorar nossos serviços e adequar às
-            novas regulamentações. Quando isso ocorrer, faremos a devida atualização nesta página e informaremos sobre
-            as mudanças através dos nossos canais de comunicação.</p>
-
-        <p>Se você tiver qualquer dúvida sobre nossas políticas ou precisar de ajuda, não hesite em entrar em contato
-            com nossa equipe de atendimento.</p>
+        </div>
     </section>
-
 
     <script>
         let descontoAplicado = 0;
@@ -1710,47 +1778,44 @@
         };
 
         function filtrarProdutos(categoria) {
-            // Selecionar todos os produtos e esconder todos inicialmente
             const produtos = document.querySelectorAll('.produto');
-            produtos.forEach(produto => {
-                produto.style.display = 'none'; // Esconde todos os produtos
+            const secoes = {
+                historia: document.querySelector('.historia'),
+                localizacao: document.querySelector('.localizacao'),
+                apoios: document.querySelector('.apoios'),
+                politicas: document.querySelector('.politicas'),
+                projetos: document.querySelector('.projetos')
+            };
+
+            // Primeiro, escondemos todos os produtos e seções
+            produtos.forEach(p => p.style.display = 'none');
+            Object.values(secoes).forEach(sec => {
+                if (sec) sec.style.display = 'none';
             });
 
-            // Selecionar as seções e escondê-las
-            const secoes = document.querySelectorAll('.historia, .localizacao');
-            secoes.forEach(secao => {
-                secao.style.display = 'none'; // Esconde as seções de "História" e "Localização"
-            });
-
-            // Atualiza o título conforme a categoria
+            // Atualiza o título da categoria
             const tituloCategoria = document.getElementById('titulo-categoria');
-
             if (nomesCategorias[categoria]) {
-                tituloCategoria.textContent = nomesCategorias[categoria]; // Atualiza o título com o nome da categoria
+                tituloCategoria.textContent = nomesCategorias[categoria];
+            } else {
+                tituloCategoria.textContent = '';
             }
 
-            // Se a categoria for "todos", exibe todos os produtos
             if (categoria === 'todos') {
-                produtos.forEach(produto => {
-                    produto.style.display = 'block';
-                });
-                // Exibe as seções
-                document.querySelectorAll('.historia').forEach(secao => secao.style.display = 'block');
-                document.querySelectorAll('.localizacao').forEach(secao => secao.style.display = 'block');
-            } else if (categoria === 'historia') {
-                // Exibe apenas a seção "História"
-                document.querySelectorAll('.historia').forEach(secao => secao.style.display = 'block');
-            } else if (categoria === 'localizacao') {
-                // Exibe apenas a seção "Localização"
-                document.querySelectorAll('.localizacao').forEach(secao => secao.style.display = 'block');
+                // Mostra todos os produtos e as seções de história e localização (se quiser)
+                produtos.forEach(p => p.style.display = 'block');
+                if (secoes.historia) secoes.historia.style.display = 'block';
+                if (secoes.localizacao) secoes.localizacao.style.display = 'block';
+            } else if (categoria in secoes) {
+                // Mostra apenas a seção correspondente (historia, localizacao, apoios, politicas, projetos)
+                if (secoes[categoria]) secoes[categoria].style.display = 'block';
             } else {
-                // Exibe apenas os produtos da categoria selecionada
+                // Mostra apenas os produtos da categoria
                 const produtosFiltrados = document.querySelectorAll(`.produto.${categoria}`);
-                produtosFiltrados.forEach(produto => {
-                    produto.style.display = 'block'; // Exibe os produtos dessa categoria
-                });
+                produtosFiltrados.forEach(p => p.style.display = 'block');
             }
         }
+
 
 
 
